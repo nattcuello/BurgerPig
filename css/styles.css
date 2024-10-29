@@ -1,115 +1,175 @@
-/* styles.css */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Istok Web', sans-serif;
+body {
+    background-color: #f8f9fa; /* Color de fondo */
 }
 
-.login-page {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: white;
+.card {
+    border: 1px solid #dee2e6; /* Borde de las tarjetas */
+}
+.container{
+    padding-left:0% ;
+    padding-right: 0%;
+    background-color: #FFE97D;
+}
+.i-phone-13-14-3,
+.i-phone-13-14-3 * {
+    box-sizing: border-box;
 }
 
-.background-image {
-    width: 390px;
+.i-phone-13-14-3 {
+    background: #ffffff;
     height: 844px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.logo {
-    width: 318px;
+.rectangle-9 {
+    background: #ffe97d;
+    width: 390px;
+    height: 454px;
+    position: absolute;
+    left: 0px;
+    top: 390px;
+}
+
+.rectangle-10 {
+    background: #fff2af;
+    border-radius: 35px;
+    width: 298px;
+    height: 198px;
+    position: absolute;
+    left: 50px;
+    top: 502px;
+}
+
+.promos {
+    color: #000000;
+    text-align: left;
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    position: absolute;
+    left: 21px;
+    top: 446px;
+    width: 197px;
+    height: 56px;
+}
+
+._2-x-1 {
+    color: #ff0707;
+    text-align: left;
+    font-family: 'IstokWeb-Bold', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    position: absolute;
+    left: 120px;
+    top: 492px;
+    width: 174px;
+    height: 80px;
+}
+
+.chesse {
+    color: #000000;
+    text-align: left;
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    position: absolute;
+    left: 139px;
+    top: 601px;
+    width: 197px;
+    height: 56px;
+}
+
+.burger {
+    color: #000000;
+    text-align: left;
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    position: absolute;
+    left: 139px;
+    top: 638px;
+    width: 197px;
+    height: 56px;
+}
+
+.polygon-1 {
+    width: 65px;
+    height: 32px;
+    position: absolute;
+    left: 385px;
+    top: 564px;
+    transform: translate(-24px, 4.35px);
+    ;
+    overflow: visible;
+}
+
+.rectangle-11 {
+    background: #c94c05;
+    width: 390px;
+    height: 34px;
+    position: absolute;
+    left: 1px;
+    top: 766px;
+}
+
+.image {
+    width: 390px;
+    height: 48px;
+    position: absolute;
+    left: 0px;
+    top: 796px;
+    object-fit: cover;
+}
+
+.ladrillos-fondo-2 {
+    border-radius: 0px 0px 25px 25px;
+    width: 392px;
+    height: 436px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.35);
+    object-fit: cover;
+}
+
+.burgerneon-sinfondo-3 {
+    width: 317px;
     height: 218px;
     position: absolute;
-    top: 0;
-    left: 119px;
+    left: 120px;
+    top: -10px;
+    object-fit: cover;
 }
 
-.banner {
+.burger-pig-3 {
     width: 348px;
     height: 224px;
     position: absolute;
-    top: 128px;
-    left: 19px;
+    left: 21px;
+    top: 122px;
+    object-fit: cover;
 }
 
-.login-container {
-    width: 307px;
-    height: 450px;
-    flex-shrink: 0;
-  
-    position: absolute;
-    top: 324px;
-    left: 4%;
-    background: rgba(215, 209, 176, 0.53);
-    border-radius: 34px;
-    padding: 20px;
-}
-
-.login-title {
-    font-size: 32px;
-    color: black;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.input-group {
-    margin: 20px 0;
-}
-
-.input-group label {
-    font-size: 11px;
-    color: black;
-    display: block;
-}
-
-.input-group input {
-    width: 100%;
-    height: 40px;
-    background: #FFF2AF;
-    border: none;
-    padding: 5px;
-    margin-top: 5px;
-}
-
-.button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.btn-menu, .btn-login {
+.rectangle-12 {
+    background: #f42001;
+    border-radius: 20px;
     width: 133px;
     height: 41px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-size: 15px;
+    position: absolute;
+    left: 120px;
+    top: 346px;
 }
 
-.btn-menu {
-    background: #E7D371;
-    color: black;
-    font-size: 12px;
-}
-
-.btn-login {
-    background: #F42001;
-}
-
-.extra-options {
+.personaliza-tu-burger {
+    color: #fffbfb;
     text-align: center;
-    margin-top: 20px;
-}
-
-.extra-options a {
-    font-size: 11px;
-    color: black;
-    text-decoration: underline;
-    margin: 0 5px;
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    left: 130px;
+    top: 346px;
+    width: 111px;
+    height: 17px;
 }
