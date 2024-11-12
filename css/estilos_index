@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('brick-wall.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 36px;
+    text-shadow: 0 0 8px #ff6600;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.login-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-button {
+    background-color: #f3d35c;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #c4a441;
+}
+
+.login-button {
+    background-color: #ff0000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.fondo{
+    background-color: ;
+}

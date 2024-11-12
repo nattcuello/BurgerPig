@@ -173,3 +173,33 @@ body {
     width: 111px;
     height: 17px;
 }
+#estilos_boton_claro{
+    background-color: #E7D371;
+    border: none;
+    margin-top: 5%;
+}
+#boton_rojo{
+    margin-top: 5%;
+}
+
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+  }
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+  .star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+  }
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: #ffc107;
+  }
