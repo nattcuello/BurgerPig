@@ -59,6 +59,12 @@ html, body {
   padding: 15px;
 }
 
+#boton-total {
+  position: absolute;
+  padding: 0.2rem 5rem 0 1rem !important;
+  font-size: 0.8rem !important;
+}
+
 .text-wrapper-3, .text-wrapper-4, .text-wrapper-5, .text-wrapper-6, .text-wrapper-8 {
   font-family: "Istok Web-Bold", Helvetica;
   font-weight: 700;
@@ -107,9 +113,17 @@ html, body {
 }
 
 .text-wrapper-9 {
+  background-color: #fff1af;
+  padding: 0.25rem 1rem 0.25rem 1rem;
   font-family: "Itim-Regular", Helvetica;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #000000;
+  z-index: 10;
+  border-radius: 50rem;
+}
+
+#style-total {
+  right: 1rem;
 }
 
 .overlap-2, .overlap-group-2 {
