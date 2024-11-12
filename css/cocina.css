@@ -24,10 +24,19 @@
     position: left;
     right: 10px;
     top: 10px;
+    display:flex;
+    justify-content: flex-end;
   }
 
   .boton-preparar-bottom {
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    top: 400px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #logcocina{
+    display: flex;
+    justify-content: flex-end;
   }
