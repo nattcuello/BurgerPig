@@ -40,3 +40,13 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  #pedido-finalizado{
+    background-color: #ffe97d;
+    border: none;
+  }
+
+  #pedido-pendiente{
+    background-color: #ffe97d;
+    border: none;
+  }
