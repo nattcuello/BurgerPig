@@ -203,3 +203,10 @@ body {
   .star-rating label:hover ~ label {
     color: #ffc107;
   }
+
+
+#boton_aceptar{
+    background-color: #E7D371;
+    border: none;
+  
+  }
