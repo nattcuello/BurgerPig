@@ -14,3 +14,7 @@ document.getElementById("bebidas").addEventListener('click', function() {
         window.location.href = 'http://127.0.0.1:5500/hamburguesas.html';
     });
     
+document.getElementById("puntos").addEventListener('click', function() {
+        window.location.href = 'http://127.0.0.1:5500/cadete calificacion.html';
+    });
+    
