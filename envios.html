@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Envios</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/stylescajaLocal.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mapas_styles.css">
+  <link rel="stylesheet" href="css/stylesmapa.css">
 </head>
 
 <body>
@@ -25,39 +25,80 @@
       <!-- Búsqueda de dirección -->
       <section class="search-section">
 
-        <div class="map" style="position: relative;">
-          <div
-            style="position: absolute; top: 0 ;display: flex; align-items: center; background-color: #c9bb44; padding: 10px; border-radius: 5px; border-radius: 5rem; margin-top: 5px;"
-            class="search-box">
-            <img src="img/iconolupa.svg" style="margin-right: 5px;" alt="Logo" width="30px" height="30px">
-            <input type="text" id="addressInput" placeholder="Ingresa Dirección"
-              style="padding: 10px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; outline: none; background: none; border: none;">
-            <img src="img/iconoplus.svg" onclick="searchAddress()" style="margin-right: 5px; cursor: pointer;"
-              alt="Logo" width="30px" height="30px">
-          </div>
+        <div class="map-container" style="display: flex; flex-direction: column; align-items: center;">
 
+          <div class="map" style="position: relative; width: 100%;">
+            <div
+              style="position: absolute; top: 0; display: flex; align-items: center; background-color: #c9bb44; padding: 5px; border-radius: 5rem; margin-top: 5px; width: 12rem; height: 2rem;"
+              class="search-box">
+              <img src="img/iconolupa.svg" style="margin-right: 3px;" alt="Logo" width="20px" height="20px">
+              <input type="text" id="addressInput" placeholder="Ingresa Dirección"
+                style="padding: 5px; border-radius: 5px 0 0 5px; outline: none; background: none; border: none; font-size: 12px; width: 120px;">
+              <img src="img/iconoplus.svg" onclick="searchAddress()" style="margin-right: 3px; cursor: pointer;" alt="Logo" width="20px" height="20px">
+            </div>
+          </div>
+        
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.0861550982922!2d-64.35291692516671!3d-33.13310108132884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2001b2079f733%3A0x2fa84f99dc95a2bc!2sGral.%20Paz%201636%2C%20X5800%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1731365703635!5m2!1ses!2sar"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            width="100%" height="300" style="border:0; margin-top: 2.5rem;" allowfullscreen="" loading="lazy">
           </iframe>
+
+
+          <!-- Primera Tarjeta -->
+          <div class="overlap-group position-relative shadow-sm" style="width: 100%; margin: 0; padding: 1rem; margin-top: 1rem; font-size: 0.9rem;">
+            <div class="text-wrapper-12 font-weight-bold" style="font-size: 0.8rem;">CASA:</div>
+            <div class="text-wrapper-13 font-weight-bold" style="font-size: 0.8rem;">Dirección: General Paz 1636</div>
+            <button id="show-first-popup" class="btn btn-danger rounded-pill text-white p-1" style="position: absolute; bottom: 10px; right: 10px; font-size: 0.8rem;">
+              ACEPTAR
+            </button>
+          </div>
+
+          <!-- Segunda Tarjeta (duplicada con cambios en ID para evitar conflictos) -->
+          <div class="overlap-group position-relative shadow-sm" style="width: 100%; margin: 0; padding: 1rem; margin-top: 1rem; font-size: 0.9rem;">
+            <div class="text-wrapper-12 font-weight-bold" style="font-size: 0.8rem;">CASA:</div>
+            <div class="text-wrapper-13 font-weight-bold" style="font-size: 0.8rem;">Dirección: Delfino Quiricci 776</div>
+            <button id="show-second-popup" class="btn btn-danger rounded-pill text-white p-1" style="position: absolute; bottom: 10px; right: 10px; font-size: 0.8rem;">
+              ACEPTAR
+            </button>
+          </div>
+
+          <!-- Primer Popup -->
+          <div id="first-popup" class="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255, 242, 175, 0.8); padding: 2rem; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+            <div class="popup-content">
+              <span id="close-first-popup"></span>
+              <h3 style="font-size: 1rem;">¿DESEA GUARDAR ESTA DIRECCION?</h3>
+              <div class="boton-preparar-top" style="text-align: center;"></div>
+              <button id="decline-first-popup" class="btn rounded-pill text-white p-1" style="background-color: #e7d371; font-size: 0.8rem; width: 45%; margin: 5px;">NO, GRACIAS</button>
+              <button id="accept-first-popup" class="btn rounded-pill text-white p-1" style="background-color: #f42001; font-size: 0.8rem; width: 45%; margin: 5px;">ACEPTAR</button>
+            </div>
+          </div>
+
+          <!-- Segundo Popup -->
+          <div id="second-popup" class="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255, 242, 175, 0.8); padding: 2rem; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+            <div class="popup-content">
+              <span id="close-second-popup"></span>
+              <h3 style="font-size: 1rem; text-align: center;">INGRESE EL NOMBRE AQUI:</h3>
+
+              <!-- Contenedor del input con borde y centrado -->
+              <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+                <input type="text" id="addressInput" placeholder="Ingresa Nombre"
+                  style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; outline: none; font-size: 14px; width: 200px; text-align: center;">
+              </div>
+
+              <div class="boton-preparar-top" style="text-align: center;"></div>
+              <button id="decline-second-popup" class="btn rounded-pill text-white p-1" style="background-color: #e7d371; font-size: 0.8rem; width: 45%; margin: 5px;">NO, GRACIAS</button>
+              <button id="accept-second-popup" class="btn rounded-pill text-white p-1" style="background-color: #f42001; font-size: 0.8rem; width: 45%; margin: 5px;">ACEPTAR</button>
+            </div>
+          </div>
+
+        
+          <!-- Botón de volver -->
+          <footer style="margin-top: 1rem;">
+            <button class="back-button btn btn-secondary">VOLVER</button>
+          </footer>
+          
         </div>
-      </section>
-
-      <!-- Sección de direcciones -->
-      <section id="addressList" class="address-section">
-        <div class="address-item">
-          <p><strong>Casa:</strong> General Paz 1636</p>
-          <button class="accept-button btn btn-success">Aceptar</button>
-        </div>
-      </section>
-
-
-      <!-- Botón de volver -->
-      <footer>
-        <button class="back-button btn btn-secondary">Volver</button>
-      </footer>
-    </div>
-  </div>
+        
 
   <!-- Modal de Confirmación -->
   <div id="confirmModal" class="modal">
@@ -66,7 +107,7 @@
       <div class="modal-buttons">
         <button id="cancelButton" style="background-color: #c9bb44; border-radius: 2rem;" class="btn btn-secondary">No,
           gracias</button>
-        <button id="confirmButton" style=" border-radius: 2rem;" class="btn btn-primary">Aceptar</button>
+        <button id="confirmButton" style=" border-radius: 2rem;" class="btn btn-primary">ACEPTAR</button>
       </div>
     </div>
   </div>
@@ -77,6 +118,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Cargar JavaScript externo -->
   <script src="js/mapa.js"></script>
+  <script src="js/envios.js"></script>
 </body>
 
 </html>
