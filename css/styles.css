@@ -384,5 +384,354 @@ body {
     margin: auto;
     margin-top: 20%;
 }
-   
-  
+
+/* From Uiverse.io by Cksunandh */ 
+.tooltip-container {
+  color: #ffffff;
+  --background: #014E00;
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+  border-radius: 50px;
+}
+
+.tooltip {
+  background-color: #014E00;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 50px;
+}
+
+.tooltip::before {
+  background-color: #014E00;
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+.input {
+  border-radius: 10px;
+  outline: 2px solid #FEBF00;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+ 
+/* From Uiverse.io by Maximinodotpy */ 
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+#ingresa_monto{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* From Uiverse.io by 3bdel3ziz-T */ 
+.form {
+  background: #0c0f14;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+  border-radius: 25px;
+}
+.form .label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.form .label:has(input:focus) .title {
+  top: 0;
+  left: 0;
+  color: #d17842;
+}
+.form .label .title {
+  padding: 0 10px;
+  transition: all 300ms;
+  font-size: 12px;
+  color: #8b8e98;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 14px;
+  position: relative;
+  left: 15px;
+  background: #e00f14;
+}
+.form .input-field {
+  width: auto;
+  height: 50px;
+  text-indent: 15px;
+  border-radius: 15px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #f42001;
+  transition: all 0.3s;
+  caret-color: f42001;
+  color: #aeaeae;
+}
+
+.form .input-field:hover {
+  border-color: rgba(209, 121, 66, 0.5);
+}
+
+.form .input-field:focus {
+  border-color: #ac6c44;
+}
+.form .split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+.form .split label {
+  width: 130px;
+}
+.form .checkout-btn {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border: none;
+  justify-content: center;
+  fill: #fff;
+  color: #fff;
+  border: 2px solid transparent;
+  background: #ffe97d;
+  transition: all 200ms;
+}
+.form .checkout-btn:active {
+  scale: 0.95;
+}
+
+
+#pagos_tarjeta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* From Uiverse.io by cohencoo */ 
+.custom-loader {
+  width: 70px;
+  height: 70px;
+  background: #f42001;
+  border-radius: 50px;
+  -webkit-mask: radial-gradient(circle 31px at 50% calc(100% + 13px),#ce0cae 95%,#0000) top 4px left 50%,
+    radial-gradient(circle 31px,#000 95%,#0000) center,
+    radial-gradient(circle 31px at 50% -13px,#000 95%,#0000) bottom 4px left 50%,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
+  animation: cu10 1.5s infinite;
+}
+
+@keyframes cu10 {
+  0% {
+    -webkit-mask-size: 0    18px,0    18px,0    18px,auto
+  }
+
+  16.67% {
+    -webkit-mask-size: 100% 18px,0    18px,0    18px,auto
+  }
+
+  33.33% {
+    -webkit-mask-size: 100% 18px,100% 18px,0    18px,auto
+  }
+
+  50% {
+    -webkit-mask-size: 100% 18px,100% 18px,100% 18px,auto
+  }
+
+  66.67% {
+    -webkit-mask-size: 0    18px,100% 18px,100% 18px,auto
+  }
+
+  83.33% {
+    -webkit-mask-size: 0    18px,0    18px,100% 18px,auto
+  }
+
+  100% {
+    -webkit-mask-size: 0    18px,0    18px,0    18px,auto
+  }
+}
+
+#Hamburguesa_loading{
+  padding: 1%;
+}
+/* From Uiverse.io by SouravBandyopadhyay */ 
+.notification {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 16rem;
+  height: 5rem;
+  background: #f42001;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+  --color: #f42001
+}
+
+.notification:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #ffe97d;
+  z-index: 2
+}
+
+.notification:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(#f42001);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification:hover:after {
+  transform: translateX(0.15rem)
+}
+
+.notititle {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notititle {
+  transform: translateX(0.15rem)
+}
+
+.notibody {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notibody {
+  transform: translateX(0.25rem)
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow {
+  z-index: 3;
+}
+
+.notiborderglow {
+  z-index: 1;
+}
+
+.notification:hover .notiglow {
+  opacity: 0.1
+}
+
+.notification:hover .notiborderglow {
+  opacity: 0.1
+}
+
