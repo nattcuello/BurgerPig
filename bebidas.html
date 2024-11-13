@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebidas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="css/stylescajaLocal.css">
+  <link rel="stylesheet" href="css/styles-armarPedido.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="iphone d-flex justify-content-center align-items-center">
+    <div class="div position-relative">
+      <!-- Header -->
+      <div class="overlap shadow-sm position-relative">
+        <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
+        <div class="text-wrapper position-absolute" style="top: 108px; left: 48px;">PEDIDOS PENDIENTES</div>
+        <div class="text-wrapper-2 position-absolute" style="top: 106px; left: 224px;">PEDIDOS FINALIZADOS</div>
+      </div>
+
+      <!-- 6 Carruseles con su propio contador -->
+      <section class="container-hamburguesa">
+
+        <div>
+          <div class="row-pedido">
+            <div class = "orden-post-extra">
+              <img id="img-pedido-extra" src="img/coca-remove.png" alt="Coca Cola">
+              <h3 id="titulo-burger-extra">Coca Cola 350cc</h3>
+              <div class="counter-container-extra">
+                <button class="btn btn-danger" id="decrement17">-</button>
+                <input type="text" id="counter17" class="counter-number-agregar" value="0" readonly>
+                <button class="btn btn-success" id="increment17">+</button>
+                <div class="text-total-agregar">$1200</div>
+              </div>
+            </div>
+            <div class = "orden-post-extra">
+              <img id="img-pedido-extra" src="img/fanta-remove.png" alt="Fanta">
+              <h3 id="titulo-burger-extra">Fanta 350cc</h3>
+              <div class="counter-container-extra">
+                <button class="btn btn-danger" id="decrement18">-</button>
+                <input type="text" id="counter18" class="counter-number-agregar" value="0" readonly>
+                <button class="btn btn-success" id="increment18">+</button>
+                <div class="text-total-agregar">$1200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="container-bebida">
+        <div>
+          <div class="row-pedido">
+            <div class = "orden-post-extra">
+              <img id="img-pedido-extra" src="img/sprite-remove.png" alt="Sprite">
+              <h3 id="titulo-burger-extra">Sprite 350cc</h3>
+              <div class="counter-container-extra">
+                <button class="btn btn-danger" id="decrement19">-</button>
+                <input type="text" id="counter19" class="counter-number-agregar" value="0" readonly>
+                <button class="btn btn-success" id="increment19">+</button>
+                <div class="text-total-agregar">$1200</div>
+              </div>
+            </div>
+            <div class = "orden-post-extra">
+              <img id="img-pedido-extra" src="img/aquarius-remove.png" alt="Aquarius">
+              <h3 id="titulo-burger-extra">Aquarus 350cc</h3>
+              <div class="counter-container-extra">
+                <button class="btn btn-danger" id="decrement20">-</button>
+                <input type="text" id="counter20" class="counter-number-agregar" value="0" readonly>
+                <button class="btn btn-success" id="increment20">+</button>
+                <div class="text-total-agregar">$1500</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-hamburguesa-extra">
+        <div>
+          <div class="row-pedido">
+            <div class = "orden-post-extra">
+              <img id="img-pedido-extra" src="img/cerveza-remove.png" alt="Cerveza">
+              <h3 id="titulo-burger-extra">Cerveza 350cc</h3>
+              <div class="counter-container-extra">
+                <button class="btn btn-danger" id="decrement21">-</button>
+                <input type="text" id="counter21" class="counter-number-agregar" value="0" readonly>
+                <button class="btn btn-success" id="increment21">+</button>
+                <div class="text-total-agregar">$2800</div>
+              </div>
+            </div>
+            <div class = "orden-post-extra">
+              <img id="img-pedido-extra" src="img/vino-remove.png" alt="Vino">
+              <h3 id="titulo-burger-extra">Zumuva 1000cc</h3>
+              <div class="counter-container-extra">
+                <button class="btn btn-danger" id="decrement22">-</button>
+                <input type="text" id="counter22" class="counter-number-agregar" value="0" readonly>
+                <button class="btn btn-success" id="increment22">+</button>
+                <div class="text-total-agregar">$1000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="d-flex justify-content-end mt-4">
+          <button id = "boton-cancelar-pedido" class="btn btn-danger rounded-pill text-white p-1">CANCELAR</button>
+        </div>
+
+        <div class="d-flex justify-content-end mt-4">
+          <button id = "boton-aceptar-pedido" class="btn btn-success rounded-pill text-white p-1">ACEPTAR</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script src="js/armar-pedido.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
