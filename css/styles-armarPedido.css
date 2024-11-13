@@ -30,6 +30,7 @@
 
 #decrement1, #decrement2, #decrement3, #decrement4, #decrement5,
 #decrement6, #decrement8, #decrement9 {
+  background-color: #014E00;
   position: relative;
   border-radius: 1rem;
   padding: 0.1rem 3rem 0.1rem 1rem;
@@ -39,6 +40,7 @@
 
 #increment1, #increment2, #increment3, #increment4, #increment5,
 #increment6, #increment8, #increment9{
+  background-color: #014E00;
   position: relative;
   border-radius: 1rem;
   padding: 0.1rem 1rem 0.1rem 3rem;
@@ -88,10 +90,27 @@
   align-items: center;
 }
 
-#boton-aceptar-pedido, #boton-cancelar-pedido {
+#boton-aceptar-pedido {
+  background: red;
+  border: none;
   padding: 0.2rem 2rem 0.2rem 2rem !important;
   font-family: "Itim-Regular", Helvetica;
-  font-size: 1.3rem;
+  font-size: 0.8;
+}
+
+#boton-cancelar-pedido {
+  background: #e7d371;
+  border: none;
+  padding: 0.2rem 2rem 0.2rem 2rem !important;
+  font-family: "Itim-Regular", Helvetica;
+  font-size: 0.8;
+}
+
+#botones-decicion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* Flexbox para alinear las imágenes en fila */
@@ -148,6 +167,7 @@
   font-size: 0,5;
   left:1rem;
   z-index: 5;
+  background-color: #014E00;
 }
 
 
@@ -156,6 +176,7 @@
 #increment15, #increment16, #increment17, #increment18,
 #increment19, #increment20, #increment21, #increment22,
  #increment23 #increment24, #increment25, #increment26 {
+  background-color: #014E00;
   position: relative;
   border-radius: 1rem;
   padding: 0.1rem 1rem 0.1rem 1rem;
@@ -189,7 +210,7 @@
   display: flex;
   padding: 1rem 0 1rem 0;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-evenly;
   align-items: center;
   width: 40vw;
 }
@@ -238,5 +259,12 @@
   max-height: 130rem;
   align-items: center;
   padding-bottom: 1rem;
+}
+
+
+
+#imagen-logo {
+  position: absolute;
+  left: 4rem;
 }
 

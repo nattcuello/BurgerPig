@@ -9,15 +9,19 @@
   <link rel="stylesheet" href="css/stylescajaLocal.css">
   <link rel="stylesheet" href="css/styles-armarPedido.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cocina.css">
 </head>
 <body>
   <div class="iphone d-flex justify-content-center align-items-center">
     <div class="div position-relative">
       <!-- Header -->
-      <div class="overlap shadow-sm position-relative">
-        <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 48px;">PEDIDOS PENDIENTES</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 106px; left: 224px;">PEDIDOS FINALIZADOS</div>
+      
+      <div id='logcocina' class="overlap shadow-sm position-relative text-center mb-4">
+        <div id = "imagen-logo">
+          <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
+        </div>
+        <button id='pedido-pendiente' class="text-wrapper" style="position: absolute; top: 108px; left: 48px;">PEDIDOS PENDIENTES</button>
+        <button id= 'pedido-finalizado' class="text-wrapper-2" style="position: absolute; top: 108px; left: 224px;">PEDIDOS FINALIZADOS</button>
       </div>
 
       <!-- 6 Carruseles con su propio contador -->
@@ -103,6 +107,17 @@
           </div>
         </div>
       </section>
+
+      <div id = "botones-decicion" class="row">
+        <div class="d-flex justify-content-end mt-4">
+          <button id = "boton-cancelar-pedido" class="btn btn-danger rounded-pill text-white p-1">CANCELAR</button>
+        </div>
+
+        <div class="d-flex justify-content-end mt-4">
+          <button id = "boton-aceptar-pedido" class="btn btn-success rounded-pill text-white p-1">ACEPTAR</button>
+        </div>
+
+      </div>
     </div>
   </div>
   
