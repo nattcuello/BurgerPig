@@ -39,20 +39,42 @@
       <div class="form-box login">
         <h2 class="title animation" style="--i:0; --j:21">Bienvenido</h2>
         <form action="#">
-
-            <div class="input-box animation" style="--i:1; --j:22">
-                <input type="text" required>
-                <label for="">Nombre de Usuario</label>
-                <i class='bx bxs-user'></i>
-            </div>
-
-            <div class="input-box animation" style="--i:2; --j:23">
-                <input type="password" required>
-                <label for="">Contraseña</label>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
-
-            <button type="submit" class="btn animation" style="--i:3; --j:24">Iniciar sesión</button>
+          <div class="input-box animation" style="--i:1; --j:22">
+            <input type="text" id="username" required>
+            <label for="">Nombre de Usuario</label>
+            <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class="input-box animation" style="--i:2; --j:23">
+            <input type="password" id="password" required>
+            <label for="">Contraseña</label>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        
+        <button id="loginButton" class="btn btn-link text-dark" style= "background-color: #f42001; padding: 0; font-size: 0.8rem; border: none; background: none;">
+            Iniciar Sesion
+        </button>
+        
+        <script>
+            document.getElementById("loginButton").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default form submission
+        
+                // Get the values of the input fields
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+        
+                // Check if both fields have values
+                if (username && password) {
+                    // Redirect to the assigned URL (change '/hamburguesas' to your actual URL)
+                    window.location.href = '/hamburguesas.html';
+                } else {
+                    // Alert or indicate to the user that both fields are required
+                    alert("Por favor, ingrese su nombre de usuario y contraseña.");
+                }
+            });
+        </script>
+        
+        
             <div class="linkTxt animation" style="--i:5; --j:25">
                 <p>No tienes una cuenta? <a href="#" class="register-link">Regístrate gratis</a></p>
             </div>
