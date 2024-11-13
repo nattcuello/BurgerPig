@@ -128,9 +128,7 @@ form button {
     margin-top: 20px;
 }
 
-form button:hover {
-    box-shadow: 0 0 10px rgb(1, 78, 0);
-}
+
 
 /* Estilo del enlace de texto */
 form .linkTxt {
