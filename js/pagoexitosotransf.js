@@ -1,5 +1,5 @@
-  // Lógica para mostrar el popup al hacer clic en el botón "ACEPTAR"
-  document.getElementById('botonAceptar').addEventListener('click', function() {
+// Lógica para mostrar el popup al hacer clic en el botón "ACEPTAR"
+document.getElementById('botonAceptar').addEventListener('click', function() {
     // Mostrar el popup y el overlay
     document.getElementById('second-popup').style.display = 'block';
     document.getElementById('second-popup-overlay').style.display = 'block';

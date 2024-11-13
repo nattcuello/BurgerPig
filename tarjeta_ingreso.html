@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pagos</title>
+  <title>Pagos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="css/stylescajaLocal.css">
@@ -24,74 +24,50 @@
         <p class="btn btn-success rounded-pill text-white p-1 mb-2">TOTAL</p>
         <p class="btn btn-light-green rounded-pill text-green p-1 mb-2 ml-2">19400</p>
       </div>
-          <!-- Pedido 1 -->
-      <div class="overlap-group position-relative p-3 shadow-sm">
-        <div class="rectangle bg-warning"></div>
-
       
-        <section id='pagos_tarjeta' class="add-card page">
-          <form class="form">
-            <label for="name" class="label">
-              <span class="title">Nombre</span>
-              <input
-                class="input-field"
-                type="text"
-                name="input-name"
-                title="Input title"
-                placeholder="Ingrese su Nombre"
-              />
+      <!-- Formulario de Pago -->
+      <section id='pagos_tarjeta' class="add-card page">
+        <form class="form">
+          <label for="name" class="label">
+            <span class="title">Nombre</span>
+            <input class="input-field" type="text" name="input-name" title="Input title" placeholder="Ingrese su Nombre"/>
+          </label>
+          <label for="serialCardNumber" class="label">
+            <span class="title">Numero de tarjeta</span>
+            <input id="serialCardNumber" class="input-field" type="number" name="input-name" title="Input title" placeholder="Ingrese su numero de Tarjeta"/>
+          </label>
+          <div class="split">
+            <label for="ExDate" class="label">
+              <span class="title">Vencimiento</span>
+              <input id="ExDate" class="input-field" type="text" name="input-name" title="Expiry Date" placeholder="01/24"/>
             </label>
-            <label for="serialCardNumber" class="label">
-              <span class="title">Numero de tarjeta</span>
-             
-              <input
-                id="serialCardNumber"
-                class="input-field"
-                type="number"
-                name="input-name"
-                title="Input title"
-                placeholder="Ingrese su numero de Tarjeta"/>
-            
+            <label for="cvv" class="label">
+              <span class="title">CVV</span>
+              <input id="cvv" class="input-field" type="number" name="cvv" title="CVV" placeholder="CVV"/>
             </label>
-        
-            <div class="split">
-              <label for="ExDate" class="label">
-                <span class="title">Vencimiento</span>
-                <input
-                  id="ExDate"
-                  class="input-field"
-                  type="text"
-                  name="input-name"
-                  title="Expiry Date"
-                  placeholder="01/24"
-                />
-              </label>
-              <label for="cvv" class="label">
-                <span class="title"> CVV</span>
-                <input
-                  id="cvv"
-                  class="input-field"
-                  type="number"
-                  name="cvv"
-                  title="CVV"
-                  placeholder="CVV"
-                />
-              </label>
-            </div>
-          </form>
-        </section>
-        
-  <!-- Botón ACEPTAR en la esquina inferior derecha -->
-   </div>
-  <div  class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
-    <button class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
-  </div>
-  <div class="d-flex mt-4" style="position: absolute; left: 10px; bottom: 10px;">
-    <button class="boton_volver rounded-pill text-white p-1">VOLVER</button>
-  </div>
-</div>
+          </div>
+        </form>
+      </section>
+      
+      <!-- Popup de éxito -->
+      <div id="second-popup-overlay" class="popup-overlay" style="display: none;"></div>
+      <div id="second-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+          <span id="close-second-popup"></span>
+          <h3>¡PAGO EXITOSO!</h3>
+          <div class="boton-preparar-top">
+            <img class="verificado" src="img/verificado.png">
+          </div>
+          <button id="accept-second-popup" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+        </div>
+      </div>
 
-
+      <!-- Botones -->
+      <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
+        <button id="botonAceptar" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+      </div>
+      <div class="d-flex mt-4" style="position: absolute; left: 10px; bottom: 10px;">
+        <button class="boton_volver rounded-pill text-white p-1">VOLVER</button>
       </div>
     </div>
   </div>
@@ -100,5 +76,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/tarjeta_confirmacion.js"></script>
 </body>
 </html>

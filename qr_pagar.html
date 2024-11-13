@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pagos</title>
+  <title>Pagos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="css/stylescajaLocal.css">
@@ -24,24 +24,32 @@
         <p class="btn btn-success rounded-pill text-white p-1 mb-2">TOTAL</p>
         <p class="btn btn-light-green rounded-pill text-green p-1 mb-2 ml-2">19400</p>
       </div>
-          <!-- Pedido 1 -->
+      <!-- Pedido 1 -->
       <div class="overlap-group position-relative p-3 shadow-sm">
         <div class="rectangle bg-warning"></div>
         <div class="text-wrapper-3 font-weight-bold">ESCANEE EL CODIGO</div>
         <img id="qr" src="img/qr_mas_chica.png" alt="">
-      
       </div>
 
-  <!-- Botón ACEPTAR en la esquina inferior derecha -->
-  <div  class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
-    <button class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
-  </div>
-  <div class="d-flex mt-4" style="position: absolute; left: 10px; bottom: 10px;">
-    <button class="boton_volver rounded-pill text-white p-1">VOLVER</button>
-  </div>
-</div>
+      <!-- Popup de éxito -->
+      <div id="second-popup-overlay" class="popup-overlay" style="display: none;"></div>
+      <div id="second-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+          <span id="close-second-popup"></span>
+          <h3>¡PAGO EXITOSO!</h3>
+          <div class="boton-preparar-top">
+            <img class="verificado" src="img/verificado.png">
+          </div>
+          <button id="accept-second-popup" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+        </div>
+      </div>
 
-
+      <!-- Botón ACEPTAR en la esquina inferior derecha -->
+      <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
+        <button id="botonAceptar" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button> <!-- Añadido id="botonAceptar" -->
+      </div>
+      <div class="d-flex mt-4" style="position: absolute; left: 10px; bottom: 10px;">
+        <button class="boton_volver rounded-pill text-white p-1">VOLVER</button>
       </div>
     </div>
   </div>
@@ -50,5 +58,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/pago_qr_exitoso.js"></script> <!-- Incluimos el archivo JavaScript -->
 </body>
 </html>

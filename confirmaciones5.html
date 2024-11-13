@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="css/stylescajaLocal.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="iphone d-flex justify-content-center align-items-center">
+        <div class="div position-relative">
+            <!-- Header -->
+            <div class="overlap shadow-sm position-relative">
+                <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
+                <div class="text-wrapper position-absolute" style="top: 108px; left: 38px;">PROMOS</div>
+                <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 110px;">HAMBURGUESAS</div>
+                <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 240px;">EXTRAS</div>
+                <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 310px;">BEBIDAS</div>
+            </div>
+
+            <!-- Pedido 1 -->
+            <div class="overlap-group position-relative p-3 shadow-sm">
+                <div id="Hamburguesa_loading" class="d-flex justify-content-start align-items-center">
+                    <img src="img/verificado.png" alt="" srcset="">
+                    <div id="porceso_listo" class="notification">
+                        <div class="notiglow"></div>
+                        <div class="notiborderglow"></div>
+                        <div class="notititle">Estamos procesando tu pedido</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedido 2 -->
+            <div class="overlap-group position-relative p-3 shadow-sm">
+                <div id="Hamburguesa_loading" class="d-flex justify-content-start align-items-center">
+                    <img src="img/verificado.png" alt="" srcset="">
+                    <div class="notification">
+                        <div class="notiglow"></div>
+                        <div class="notiborderglow"></div>
+                        <div class="notititle">Tu pedido ya se encuentra en preparacion...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedido 3 -->
+            <div class="overlap-group position-relative p-3 shadow-sm">
+                <div id="Hamburguesa_loading" class="d-flex justify-content-start align-items-center">
+                    <img src="img/verificado.png" alt="" srcset="">
+                    <div class="notification">
+                        <div class="notiglow"></div>
+                        <div class="notiborderglow"></div>
+                        <div class="notititle">El repartidor ya se encuentra en el local...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedido 4 -->
+            <div class="overlap-group position-relative p-3 shadow-sm">
+                <div id="Hamburguesa_loading" class="d-flex justify-content-start align-items-center">
+                    <img src="img/verificado.png" alt="" srcset="">
+                    <div class="notification">
+                        <div class="notiglow"></div>
+                        <div class="notiborderglow"></div>
+                        <div class="notititle">Tu pedido se encuentra en camino</div>
+                    </div>
+                </div>
+
+                <div id="popapconfirmacion" class="popup-overlay" style="display: none;"></div>
+                <div id="popup" class="popup" style="display: none;">
+                  <div class="popup-content">
+                    <span id="close-popup"></span>
+                    <h3>¡CALIFICANOS!</h3>
+                  
+                    <div class="rating">
+                      <input type="radio" id="star-1" name="star-radio" value="star-1">
+                      <label for="star-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                      </label>
+                      <input type="radio" id="star-2" name="star-radio" value="star-1">
+                      <label for="star-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                      </label>
+                      <input type="radio" id="star-3" name="star-radio" value="star-1">
+                      <label for="star-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                      </label>
+                      <input type="radio" id="star-4" name="star-radio" value="star-1">
+                      <label for="star-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                      </label>
+                      <input type="radio" id="star-5" name="star-radio" value="star-1">
+                      <label for="star-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                      </label>
+                    </div>
+                    <div id="button-container" class="button-container">
+                      <button id="accept-popup" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="second-popup-overlay" class="popup-overlay" style="display: none;"></div>
+                <div id="second-popup" class="popup" style="display: none;">
+                  <div class="popup-content">
+                    <span id="close-second-popup"></span>
+                    <h3>¡¡PEDIDO FINALIZADO!!</h3>
+                    <div class="boton-preparar-top">
+                      <img class="verificado" src="img/verificado.png">
+                    </div>
+                    <button id="accept-second-popup" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+                  </div>
+                </div>
+                
+                <!-- Botón ACEPTAR en la esquina inferior derecha -->
+                <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
+                    <div class="d-flex mt-4" style="position: absolute; left: 10px; bottom: 10px;">
+                        <button id="boton_aceptar" class="rounded-pill text-white p-1">VOLVER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/comfirmacion5.js" ></script>
+</body>
+
+</html >
