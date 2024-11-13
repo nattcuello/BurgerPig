@@ -15,6 +15,16 @@ document.getElementById("bebidas").addEventListener('click', function() {
     });
     
 document.getElementById("puntos").addEventListener('click', function() {
-        window.location.href = 'http://127.0.0.1:5500/cadete calificacion.html';
+        window.location.href = 'http://127.0.0.1:5500/cadete_calificacion.html';
     });
     
+
+
+document.getElementById("ingresar").addEventListener('click', function() {
+        window.location.href = 'http://127.0.0.1:5500/ingresar.html';
+    });
+    
+document.getElementById("registro").addEventListener('click', function() {
+        window.location.href = 'http://127.0.0.1:5500/registro.html';
+    });
+
