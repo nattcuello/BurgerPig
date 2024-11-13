@@ -1,0 +1,29 @@
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60vw;
+  }
+
+
+.small-description {
+  font-size: 18px;
+  font-weight: bold;
+}
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.counter-btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.counter-number {
+  font-size: 24px;
+  width: 50px;
+  text-align: center;
+}
