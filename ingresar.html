@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="css/ingreso-registro.css">
+
+</head>
+
+<body>
+
+  <!-- Main Container for Mobile View -->
+  <div class="iphone d-flex justify-content-center align-items-center">
+
+    <!-- Wrapper for Content -->
+    <div class="div position-relative">
+
+      <!-- Header Section with Logos on Top of Background -->
+      <div class="overlap shadow-sm position-relative">
+
+        <!-- Background Image of Ladrillos -->
+        <img id="fondo-logo" src="img/ladrillos_fondo2.png" alt="Fondo Ladrillos" class="fondo-ladrillos" />
+        
+        <!-- Logo and Name Positioned Over the Background -->
+        <div class="info-text login text-center">
+          <div class="animation" style="--i:17; --j:0">
+            <img id="burger-neon-ingreso" src="img/Burguerneon_sinfondo3.png" alt="Logo Burger Neon" />
+          </div>
+          <div class="animation" style="--i:18; --j:1">
+            <img id="nombre-neon-ingreso" src="img/BurgerPig_3.png" alt="Logo Burger Pig" />
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Sign Up Form -->
+      <div class="form-box login">
+        <h2 class="title animation" style="--i:0; --j:21">Bienvenido</h2>
+        <form action="#">
+
+            <div class="input-box animation" style="--i:1; --j:22">
+                <input type="text" required>
+                <label for="">Nombre de Usuario</label>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box animation" style="--i:2; --j:23">
+                <input type="password" required>
+                <label for="">Contraseña</label>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn animation" style="--i:3; --j:24">Iniciar sesión</button>
+            <div class="linkTxt animation" style="--i:5; --j:25">
+                <p>No tienes una cuenta? <a href="#" class="register-link">Regístrate gratis</a></p>
+            </div>
+        </form>
+    </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>

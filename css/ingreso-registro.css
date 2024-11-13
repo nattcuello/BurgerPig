@@ -1,0 +1,254 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Variables de color */
+:root {
+    --white: #ffe97d;
+    --black: #f42001;
+    --lightBlue: #014e00;
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+/* Contenedor principal */
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo del formulario */
+.form-box {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--black);
+}
+
+/* Estilo de los campos de entrada */
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid var(--black);
+    background: transparent;
+    color: var(--black);
+    outline: none;
+    transition: .5s;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom-color: var(--lightBlue);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--black);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -10px;
+    color: var(--lightBlue);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i {
+    color: var(--lightBlue);
+}
+
+/* Estilo del botón de envío */
+form button {
+    width: 100%;
+    height: 45px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+form button:hover {
+    box-shadow: 0 0 10px rgb(1, 78, 0);
+}
+
+/* Estilo del enlace de texto */
+form .linkTxt {
+    font-size: 14px;
+    color: var(--black);
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.linkTxt p a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Estilo de las imágenes de logo */
+.info-text img {
+    max-width: 90%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Fondo de ladrillos */
+.fondo-ladrillos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Asegúrate de que la imagen cubra todo el área */
+    object-fit: cover; /* La imagen cubrirá el área de fondo */
+    z-index: 1; /* Esto asegura que la imagen de fondo quede por detrás del contenido */
+}
+
+/* Contenedor con los logos y texto */
+.info-text.login {
+    position: relative;
+    z-index: 2; /* Los logos estarán encima de la imagen */
+    padding: 30px 0; /* Ajusta el padding según sea necesario */
+}
+
+/* Animación de los logos */
+.animation {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilos Responsivos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .form-box h2 {
+        font-size: 22px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    form button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .linkTxt {
+        font-size: 12px;
+    }
+
+    .info-text img {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    .form-box h2 {
+        font-size: 18px;
+    }
+
+    .input-box input {
+        font-size: 12px;
+    }
+
+    form button {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .linkTxt {
+        font-size: 10px;
+    }
+
+    .info-text img {
+        max-width: 65%;
+    }
+}
