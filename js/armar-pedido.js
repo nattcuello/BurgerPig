@@ -27,8 +27,6 @@ setupCounter('counter6', 'increment6', 'decrement6', 3);
 setupCounter('counter7', 'increment7', 'decrement7', 3);
 setupCounter('counter8', 'increment8', 'decrement8', 3);
 setupCounter('counter9', 'increment9', 'decrement9', 3);
-
-
 setupCounter('counter11', 'increment11', 'decrement11', 99);
 setupCounter('counter12', 'increment12', 'decrement12', 99);
 setupCounter('counter13', 'increment13', 'decrement13', 99);
