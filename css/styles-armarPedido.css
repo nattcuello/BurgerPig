@@ -139,7 +139,9 @@
 
 
 #decrement11, #decrement12, #decrement13, #decrement14,
-#decrement15, #decrement16, #decrement17, #decrement18 {
+#decrement15, #decrement16, #decrement17, #decrement18,
+#decrement19, #decrement20, #decrement21, #decrement22,
+#decrement23, #decrement24, #decrement25, #decrement26 {
   position: relative;
   border-radius: 1rem;
   padding: 0.1rem 1rem 0.1rem 1rem;
@@ -151,7 +153,9 @@
 
 
 #increment11, #increment12, #increment13,#increment14,
-#increment15, #increment16, #increment17, #increment18 {
+#increment15, #increment16, #increment17, #increment18,
+#increment19, #increment20, #increment21, #increment22,
+ #increment23 #increment24, #increment25, #increment26 {
   position: relative;
   border-radius: 1rem;
   padding: 0.1rem 1rem 0.1rem 1rem;
@@ -182,9 +186,12 @@
 
 
 .orden-post-extra {
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 11rem;
+  display: flex;
+  padding: 1rem 0 1rem 0;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 40vw;
 }
 
 
@@ -198,12 +205,38 @@
 
 
 #img-pedido-extra {
-  width: 9rem; 
+  width: 40vw; 
+  flex-direction: column;
+  justify-self: end;
+  align-items: flex-start;
 }
 
 
 .counter-container-extra {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
+.container-hamburguesa-extra {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 100%;
+  max-height: 130rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.container-bebida {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  width: 100%;
+  max-height: 130rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+

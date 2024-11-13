@@ -35,6 +35,12 @@ setupCounter('counter15', 'increment15', 'decrement15', 99);
 setupCounter('counter16', 'increment16', 'decrement16', 99);
 setupCounter('counter17', 'increment17', 'decrement17', 99);
 setupCounter('counter18', 'increment18', 'decrement18', 99);
+setupCounter('counter19', 'increment19', 'decrement19', 99);
+setupCounter('counter20', 'increment20', 'decrement20', 99);
+setupCounter('counter21', 'increment21', 'decrement21', 99);
+setupCounter('counter22', 'increment22', 'decrement22', 99);
+setupCounter('counter23', 'increment23', 'decrement23', 99);
+setupCounter('counter24', 'increment24', 'decrement24', 99);
 
 
 function setupCounterTotal(counterId, incrementId, decrementId, maxSlides) {
