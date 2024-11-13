@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedidos</title>
+  <title>Cocina Listos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="css/stylescajaLocal.css">
@@ -11,11 +11,17 @@
 </head>
 <body>
   <div class="ipad">
-    <div id='logcocina' class="overlap shadow-sm position-relative text-center mb-4">
+    <div class="overlap shadow-sm position-relative">
       <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-      <button id='pedido-pendiente' class="text-wrapper" style="position: absolute; top: 108px; left: 48px;">PEDIDOS PENDIENTES</button>
-      <button id= 'pedido-finalizado' class="text-wrapper-2" style="position: absolute; top: 108px; left: 224px;">PEDIDOS FINALIZADOS</button>
-    </div>
+      
+      <button id="pedidos_pendientes" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 48px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+          PEDIDOS PENDIENTES
+      </button>
+      
+      <button id="pedidos_finalizados" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 224px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+          PEDIDOS FINALIZADOS
+      </button>
+  </div>
 
     <!-- Contenedor de pedidos -->
     <div class="pedido-container">
@@ -75,6 +81,10 @@
       
     </div>
   </div>
+
+  <script src="js/redirects_todos.js"></script>
+  <script src="js/pedidos_redirect.js"></script>
+
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

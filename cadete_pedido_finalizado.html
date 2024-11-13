@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedidos</title>
+  <title>Cadete Pedido Finalizado</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="css/stylescajaLocal.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/headers.css">
 </head>
 <body>
   <div class="iphone d-flex justify-content-center align-items-center">
     <div class="div position-relative">
       <!-- Header -->
-      <div class="overlap shadow-sm position-relative">
+      <div class="overlap shadow-sm position-relative" id="botones_headers">
         <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 28px;">PEDIDOS PENDIENTES</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 170px;">PEDIDOS FINALIZADOS</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 320px;">PUNTOS</div>
-      </div>
-
+    
+        <button id="pedidos_pendientes" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 48px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+          PEDIDOS PENDIENTES
+      </button>
+      
+      <button id="pedidos_finalizados" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 224px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+          PEDIDOS FINALIZADOS
+      </button>
+  </div>
       <!-- Pedido 1 -->
       <div class="overlap-group position-relative p-3 shadow-sm">
         <div class="rectangle bg-warning"></div>
@@ -28,13 +33,9 @@
         <p class="element-x-chese-burger-x">2 x Cheese Burger<br>2 x Papas Extras<br>1 x Coca-Cola 1.5L</p>
         <div class="text-wrapper-5 font-weight-bold">Direccion</div>
         <p class="p">Kowalk 80, Río Cuarto, CÓRDOBA</p>
- 
         <div class="text-wrapper-5 font-weight-bold">Direccion del local</div>
         <p class="p">General Paz 1435, Rio Cuarto, CÓRDOBA</p>
-        <!-- Botón TOTAL y monto alineados en el centro del lado derecho -->
-       
         <div class="d-flex justify-content-end align-items-center mt-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-       
         </div>
         <br> 
         <button id="estilos_boton_claro" class="rounded-pill text-white p-1" style="width: 200px;">HE LLEGADO AL LOCAL</button><br>
@@ -43,7 +44,6 @@
         
         <button id="boton_rojo" class="btn btn-danger rounded-pill text-white p-1" style="width: 200px;">PEDIDO FINALIZADO</button>
         
-        <!-- Botón ACEPTAR en la esquina inferior derecha -->
         <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
             
             <div class="d-flex flex-column">
@@ -55,5 +55,19 @@
         </div>
         
       </div>
+<<<<<<< HEAD
     </body>
 </html>
+=======
+
+
+      <script src="js/redirects_todos.js"></script>
+      <script src="js/pedidos_redirect.js"></script>
+
+      <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+>>>>>>> refs/remotes/origin/main

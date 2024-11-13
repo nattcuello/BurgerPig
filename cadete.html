@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedidos</title>
+  <title>Cadete</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="globals.css">
   <link rel="stylesheet" href="css/stylescajaLocal.css">
@@ -14,10 +14,16 @@
       <!-- Header -->
       <div class="overlap shadow-sm position-relative">
         <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 28px;">PEDIDOS PENDIENTES</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 170px;">PEDIDOS FINALIZADOS</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 320px;">PUNTOS</div>
-      </div>
+        
+        <button id="pedidos_pendientes" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 48px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+            PEDIDOS PENDIENTES
+        </button>
+        
+        <button id="pedidos_finalizados" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 224px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+            PEDIDOS FINALIZADOS
+        </button>
+
+  </div>
 
       <!-- Pedido 1 -->
       <div class="overlap-group position-relative p-3 shadow-sm">
@@ -28,18 +34,14 @@
         <div class="text-wrapper-5 font-weight-bold">Direccion</div>
         <p class="p">Kowalk 80, Río Cuarto, CÓRDOBA</p>
  
-
-        <!-- Botón TOTAL y monto alineados en el centro del lado derecho -->
-       
         <div class="d-flex justify-content-end align-items-center mt-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
         <h5 class="rounded-pill text-grey p-1 mr-2">A pagar</p>
           <button class="btn btn-success rounded-pill text-white p-1 mr-2">TOTAL</button>
           <div class="text-wrapper-9">$19400</div> 
-         
         </div>
         <br> 
   <br>
-        <!-- Botón ACEPTAR en la esquina inferior derecha -->
+
         <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
           <button class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
         </div>
@@ -59,25 +61,25 @@
     <p class="p">Tanti 1538, Rio Cuarto, CÓRDOBA</p>
 
 
-    <!-- Botón TOTAL y monto alineados en el centro del lado derecho -->
-   
     <div class="d-flex justify-content-end align-items-center mt-2" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
   
         
       <button class="btn btn-success rounded-pill text-white p-1 mr-2">abonado</button>
 
-     
     </div>
   <br> 
   <br>
-    <!-- Botón ACEPTAR en la esquina inferior derecha -->
-    <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
+  
+  <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
       <button class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
     </div>
   </div>
         
   
   </div>
+  
+  <script src="js/redirects_todos.js"></script>
+  <script src="js/pedidos_redirect.js"></script>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

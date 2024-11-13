@@ -14,15 +14,26 @@
   <div class="iphone d-flex justify-content-center align-items-center">
     <div class="div position-relative">
       <!-- Header -->
-      <div class="overlap shadow-sm position-relative">
-        <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 30px;">PROMOS</div>
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 95px;">HAMBURGUESAS</div>
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 210px;">EXTRAS</div>
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 270px;">BEBIDAS</div>
-      </div>
+      <div class="overlap shadow-sm position-relative d-flex justify-content-around" style="width: 100%;">
+        <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo" style="position: absolute; top: 0; left: 0;">
+        
+        <button id="hamburguesas_combo" class="btn btn-link text-dark" style="padding: 0; font-size: 0.8rem; border: none; background: none;">
+            PROMOS
+        </button>
+        
+        <button id="hamburguesas" class="btn btn-link text-dark" style="padding: 0; font-size: 0.8rem; border: none; background: none;">
+            HAMBURGUESAS
+        </button>
+    
+        <button id="extras" class="btn btn-link text-dark" style="padding: 0; font-size: 0.8rem; border: none; background: none;">
+            EXTRAS
+        </button>
+    
+        <button id="bebidas" class="btn btn-link text-dark" style="padding: 0; font-size: 0.8rem; border: none; background: none;">
+            BEBIDAS
+        </button>
+    </div>
 
-      <!-- Búsqueda de dirección -->
       <section class="search-section">
 
         <div class="map-container" style="display: flex; flex-direction: column; align-items: center;">
@@ -44,7 +55,6 @@
           </iframe>
 
 
-          <!-- Primera Tarjeta -->
           <div class="overlap-group position-relative shadow-sm" style="width: 100%; margin: 0; padding: 1rem; margin-top: 1rem; font-size: 0.9rem;">
             <div class="text-wrapper-12 font-weight-bold" style="font-size: 0.8rem;">CASA:</div>
             <div class="text-wrapper-13 font-weight-bold" style="font-size: 0.8rem;">Dirección: General Paz 1636</div>
@@ -53,7 +63,6 @@
             </button>
           </div>
 
-          <!-- Segunda Tarjeta (duplicada con cambios en ID para evitar conflictos) -->
           <div class="overlap-group position-relative shadow-sm" style="width: 100%; margin: 0; padding: 1rem; margin-top: 1rem; font-size: 0.9rem;">
             <div class="text-wrapper-12 font-weight-bold" style="font-size: 0.8rem;">CASA:</div>
             <div class="text-wrapper-13 font-weight-bold" style="font-size: 0.8rem;">Dirección: Delfino Quiricci 776</div>
@@ -62,7 +71,6 @@
             </button>
           </div>
 
-          <!-- Primer Popup -->
           <div id="first-popup" class="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255, 242, 175, 0.8); padding: 2rem; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
             <div class="popup-content">
               <span id="close-first-popup"></span>
@@ -73,13 +81,11 @@
             </div>
           </div>
 
-          <!-- Segundo Popup -->
           <div id="second-popup" class="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255, 242, 175, 0.8); padding: 2rem; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
             <div class="popup-content">
               <span id="close-second-popup"></span>
               <h3 style="font-size: 1rem; text-align: center;">INGRESE EL NOMBRE AQUI:</h3>
 
-              <!-- Contenedor del input con borde y centrado -->
               <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
                 <input type="text" id="addressInput" placeholder="Ingresa Nombre"
                   style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; outline: none; font-size: 14px; width: 200px; text-align: center;">
@@ -92,7 +98,6 @@
           </div>
 
         
-          <!-- Botón de volver -->
           <footer style="margin-top: 1rem;">
             <button class="back-button btn btn-secondary">VOLVER</button>
           </footer>
@@ -100,7 +105,6 @@
         </div>
         
 
-  <!-- Modal de Confirmación -->
   <div id="confirmModal" class="modal">
     <div class="modal-content">
       <p class="text-style-modal-text">¿Desea guardar esta dirección?</p>
@@ -111,14 +115,16 @@
       </div>
     </div>
   </div>
+  
+  <script src="js/mapa.js"></script>
+  <script src="js/envios.js"></script>
+  <script src="js/redirects_todos.js"></script>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Cargar JavaScript externo -->
-  <script src="js/mapa.js"></script>
-  <script src="js/envios.js"></script>
+
 </body>
 
 </html>
