@@ -140,3 +140,269 @@ html, body {
   color: #000000;
   font-size: 12px;
 }
+
+
+/* BOTONES */
+
+/* Estilos base del botón */
+.button {
+  height: 30px; /* Altura más pequeña */
+  width: 90px; /* Ancho más pequeño */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto del botón */
+  background-color: #f42001; /* Fondo del botón */
+}
+
+/* Fase 1: Estilos iniciales - "ACEPTAR" */
+.type1::before {
+  content: "ACEPTAR";
+  height: 30px; /* Altura coincidente con el botón */
+  width: 90px; /* Ancho coincidente con el botón */
+  background-color: #f42001;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0px) scale(1.1); /* Desplazado un poco y escalado */
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Fase 2: "EN PREPARACION" */
+.type1::after {
+  content: "EN PREPARACION";
+  height: 30px; /* Altura coincidente con el botón */
+  width: 90px; /* Ancho coincidente con el botón */
+  background-color: #f42001;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px); /* Ajusta la distancia de la transición */
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+  transition: all 0.5s ease-in-out;
+}
+
+.type1.phase2::after {
+  background-color: #e7d371; /* Color de fondo de la fase 2 */
+  transform: translateY(0) scale(1.1);
+}
+
+.type1.phase2::before {
+  transform: translateY(-30px) scale(0) rotate(120deg); /* Texto de fase 1 desplazado y girado */
+}
+
+/* Fase 3: "ENTREGAR" */
+.type1.phase3::after {
+  content: "ENTREGAR";
+  background-color: #f42001;
+  color: #fff;
+  font-size: 0.6rem;
+  transform: translateY(0) scale(1); /* Animación suave para el texto de fase 3 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+}
+
+.type1.phase3::before {
+  transform: translateY(-30px) scale(0) rotate(120deg); /* Texto de fase 1 desplazado y girado */
+}
+
+/*Boton 2*/
+/* Fase 1: Estilos iniciales - "ACEPTAR" */
+.type2::before {
+  content: "ACEPTAR";
+  height: 30px; /* Altura coincidente con el botón */
+  width: 90px; /* Ancho coincidente con el botón */
+  background-color: #f42001;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0px) scale(1.1); /* Desplazado un poco y escalado */
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Fase 2: "EN PREPARACION" */
+.type2::after {
+  content: "EN PREPARACION";
+  height: 30px; /* Altura coincidente con el botón */
+  width: 90px; /* Ancho coincidente con el botón */
+  background-color: #f42001;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px); /* Ajusta la distancia de la transición */
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+  transition: all 0.5s ease-in-out;
+}
+
+.type2.phase_2::after {
+  background-color: #e7d371; /* Color de fondo de la fase 2 */
+  transform: translateY(0) scale(1.1);
+}
+
+.type2.phase_2::before {
+  transform: translateY(-30px) scale(0) rotate(120deg); /* Texto de fase 1 desplazado y girado */
+}
+
+/* Fase 3: "ENTREGAR" */
+.type2.phase_3::after {
+  content: "ENTREGAR";
+  background-color: #f42001;
+  color: #fff;
+  font-size: 0.6rem;
+  transform: translateY(0) scale(1); /* Animación suave para el texto de fase 3 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+}
+
+.type2.phase_3::before {
+  transform: translateY(-30px) scale(0) rotate(120deg); /* Texto de fase 1 desplazado y girado */
+}
+
+/*Boton 3*/
+/* Fase 1: Estilos iniciales - "ACEPTAR" */
+.type3::before {
+  content: "ACEPTAR";
+  height: 30px; /* Altura coincidente con el botón */
+  width: 90px; /* Ancho coincidente con el botón */
+  background-color: #f42001;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0px) scale(1.1); /* Desplazado un poco y escalado */
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Fase 2: "EN PREPARACION" */
+.type3::after {
+  content: "EN PREPARACION";
+  height: 30px; /* Altura coincidente con el botón */
+  width: 90px; /* Ancho coincidente con el botón */
+  background-color: #f42001;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px); /* Ajusta la distancia de la transición */
+  font-size: 0.6rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+  transition: all 0.5s ease-in-out;
+}
+
+.type3.phase-2::after {
+  background-color: #e7d371; /* Color de fondo de la fase 2 */
+  transform: translateY(0) scale(1.1);
+}
+
+.type3.phase-2::before {
+  transform: translateY(-30px) scale(0) rotate(120deg); /* Texto de fase 1 desplazado y girado */
+}
+
+/* Fase 3: "ENTREGAR" */
+.type3.phase-3::after {
+  content: "ENTREGAR";
+  background-color: #f42001;
+  color: #fff;
+  font-size: 0.6rem;
+  transform: translateY(0) scale(1); /* Animación suave para el texto de fase 3 */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el texto */
+}
+
+.type3.phase-3::before {
+  transform: translateY(-30px) scale(0) rotate(120deg); /* Texto de fase 1 desplazado y girado */
+}
+
+
+/* POP UP */
+
+
+/* Estilo básico para el pop-up */
+.popup-overlay {
+  display: none; /* Ocultado por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  z-index: 1000;
+}
+
+.popup {
+  display: none; /* Ocultado por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+.popup-content {
+  background-color: rgba(255, 242, 175, 0.8); /* Fondo translúcido */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.number-container {
+  margin-bottom: 20px; 
+}
+
+#button-container {
+  margin-top: 20px; 
+}
+
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}

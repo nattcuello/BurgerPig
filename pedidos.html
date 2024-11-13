@@ -35,11 +35,12 @@
       
         <!-- Botón ACEPTAR en la esquina inferior derecha -->
         <div id = "style-total" class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
-          <button class="btn btn-danger rounded-pill text-white" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">ACEPTAR</button>
+          <button class="button type1"  id="toggleButton"></button>
         </div>
       </div>
-            
-      
+
+
+
 
 <!-- Pedido 2 -->
       <div class="overlap-group position-relative p-3 shadow-sm">
@@ -55,10 +56,35 @@
           <p class="text-wrapper-15">Tanti 1538, Río Cuarto, CÓRDOBA</p>
           <p class="element-x-simple-burger">2 x Simple Burger<br>2 x Cheddar Extra<br>1 x Fanta 1.5L</p>
           <div id = "style-total" class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
-            <button class="btn btn-danger rounded-pill text-white" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">ACEPTAR</button>
+            <button class="button type2" id="toggleButton2"></button>
           </div>
         </div>
 
+
+        <div id="popup-overlay" class="popup-overlay" style="display: none;"></div>
+        <div id="popup" class="popup" style="display: none;">
+          <div class="popup-content">
+            <span id="close-popup" ></span>
+            <h3>COMPARTE ESTE NUMERO CON EL CLIENTE</h3>
+            <h1>2583</h1>
+            <div id="button-container" class="button-container">
+              <!-- Botón Aceptar con id para ser referenciado -->
+              <button id="accept-popup" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+            </div>
+          </div>
+        </div>
+        
+        <div id="second-popup-overlay" class="popup-overlay" style="display: none;"></div>
+        <div id="second-popup" class="popup" style="display: none;">
+          <div class="popup-content">
+            <span id="close-second-popup"></span>
+            <h3>¡¡PEDIDO FINALIZADO!!</h3>
+            <div class="boton-preparar-top">
+              <img class="verificado" src="img/verificado.png">
+            </div>
+            <button id="accept-second-popup" class="btn btn-danger rounded-pill text-white p-1">ACEPTAR</button>
+          </div>
+        </div>
 
       <!-- Pedido 3 -->
       <div class="overlap-group position-relative p-3 shadow-sm">
@@ -71,11 +97,13 @@
         <p class="text-wrapper-15">Tanti 1538, Río Cuarto, CÓRDOBA</p>
         <p class="element-x-simple-burger">2 x Simple Burger<br>2 x Cheddar Extra<br>1 x Fanta 1.5L</p>
         <div id = "style-total" class="d-flex justify-content-end mt-4" style="position: absolute; right: 10px; bottom: 10px;">
-          <button class="btn btn-danger rounded-pill text-white" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">ACEPTAR</button>
+          <button class="button type3"  id="toggleButton3"></button>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="js/cajalocal.js" ></script>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
