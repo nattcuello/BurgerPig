@@ -29,6 +29,16 @@ setupCounter('counter8', 'increment8', 'decrement8', 3);
 setupCounter('counter9', 'increment9', 'decrement9', 3);
 
 
+setupCounter('counter11', 'increment11', 'decrement11', 99);
+setupCounter('counter12', 'increment12', 'decrement12', 99);
+setupCounter('counter13', 'increment13', 'decrement13', 99);
+setupCounter('counter14', 'increment14', 'decrement14', 99);
+setupCounter('counter15', 'increment15', 'decrement15', 99);
+setupCounter('counter16', 'increment16', 'decrement16', 99);
+setupCounter('counter17', 'increment17', 'decrement17', 99);
+setupCounter('counter18', 'increment18', 'decrement18', 99);
+
+
 function setupCounterTotal(counterId, incrementId, decrementId, maxSlides) {
   document.getElementById(incrementId).addEventListener('click', function() {
     var counter = document.getElementById(counterId);

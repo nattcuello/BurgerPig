@@ -92,3 +92,44 @@
   font-family: "Itim-Regular", Helvetica;
   font-size: 1.3rem;
 }
+
+/* Flexbox para alinear las imágenes en fila */
+.row-pedido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+  margin-bottom: 20px; /* Espacio entre filas */
+}
+
+/* Imágenes responsivas */
+#img-pedido {
+  width: 10rem; /* O 45%, ajusta según lo que te guste más */
+  max-width: 10rem; /* Opcional: Limita el tamaño máximo en pantallas grandes */
+}
+
+/* Títulos centrados bajo cada imagen */
+#titulo-burger {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Contenedor responsivo */
+.container-hamburguesa {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 100%;
+  height: 14rem;
+  align-items: center;
+}
+
+.orden-post {
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.7rem 0 0.7rem;
+}
+
