@@ -15,10 +15,18 @@
       <!-- Header -->
       <div class="overlap shadow-sm position-relative">
         <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-        <div class="text-wrapper position-absolute" style="top: 108px; left: 28px;">PEDIDOS PENDIENTES</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 170px;">PEDIDOS FINALIZADOS</div>
-        <div class="text-wrapper-2 position-absolute" style="top: 108px; left: 320px;">PUNTOS</div>
-      </div>
+        
+        <button id="pedidos_pendientes" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 48px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+            PEDIDOS PENDIENTES
+        </button>
+        
+        <button id="pedidos_finalizados" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 224px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+            PEDIDOS FINALIZADOS
+        </button>
+        <button id="puntos" class="btn btn-link text-dark position-absolute" style="top: 108px; left: 224px; padding: 0; font-size: 0.8rem; border: none; background: none;">
+          PUNTOS
+      </button>
+    </div>
 
       <!-- Pedido 1 -->
       <div class="overlap-group position-relative p-3 shadow-sm">
@@ -50,3 +58,14 @@
         </div>
         
       </div>
+
+
+      <script src="js/redirects_todos.js"></script>
+      <script src="js/pedidos_redirect.js"></script>
+
+      <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
