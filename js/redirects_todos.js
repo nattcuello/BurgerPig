@@ -11,7 +11,7 @@ document.getElementById("hamburguesas").addEventListener('click', function() {
     });
     
 document.getElementById("bebidas").addEventListener('click', function() {
-        window.location.href = 'http://127.0.0.1:5500/hamburguesas.html';
+        window.location.href = 'http://127.0.0.1:5500/bebidas.html';
     });
     
 document.getElementById("puntos").addEventListener('click', function() {
