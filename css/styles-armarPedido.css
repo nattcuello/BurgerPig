@@ -90,45 +90,50 @@
   align-items: center;
 }
 
-#boton-aceptar-pedido {
-  background: red;
-  border: none;
-  padding: 0.2rem 2rem 0.2rem 2rem !important;
-  font-family: "Itim-Regular", Helvetica;
-  font-size: 0.8;
+
+#boton_cancelar {
+  background-color: red;
+  margin-bottom: 1rem;
+  border: none !important;
 }
 
-#boton-cancelar-pedido {
-  background: #e7d371;
-  border: none;
-  padding: 0.2rem 2rem 0.2rem 2rem !important;
-  font-family: "Itim-Regular", Helvetica;
-  font-size: 0.8;
+#boton-volver {
+  margin-bottom: 1rem;
+
 }
 
-#botones-decicion {
+#botones-desicion {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 20px;
+  left: 1.4rem;
 }
 
-/* Flexbox para alinear las imágenes en fila */
+
 .row-pedido {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
-  margin-bottom: 20px; /* Espacio entre filas */
+  flex-wrap: wrap; 
+  margin-bottom: 20px; 
 }
 
-/* Imágenes responsivas */
+
+.row-pedido {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 #img-pedido {
-  width: 10rem; /* O 45%, ajusta según lo que te guste más */
-  max-width: 10rem; /* Opcional: Limita el tamaño máximo en pantallas grandes */
+  width: 10rem; 
+  max-width: 10rem; 
 }
 
-/* Títulos centrados bajo cada imagen */
+
 #titulo-burger {
   justify-content: center;
   align-items: center;
@@ -137,7 +142,6 @@
   cursor: pointer;
 }
 
-/* Contenedor responsivo */
 .container-hamburguesa {
   display: flex;
   flex-direction: column;
@@ -254,7 +258,6 @@
 .container-bebida {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
   width: 100%;
   max-height: 130rem;
   align-items: center;
@@ -263,8 +266,6 @@
 
 
 
-#imagen-logo {
-  position: absolute;
-  left: 4rem;
-}
+
+
 

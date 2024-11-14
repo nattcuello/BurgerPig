@@ -17,9 +17,9 @@
       <!-- Header -->
       
       <div id='logcocina' class="overlap shadow-sm position-relative text-center mb-4">
-        <div id = "imagen-logo">
-          <img class="burgerneon-sinfondo" src="img/Burgerneon_sinfondo 3.png" alt="Logo">
-        </div>
+        <a  href="forma_pago.html">
+          <img id="carrito" src="img/logo-carro-remove.png" alt = "logo_carrito" style="width: 4rem;">
+        </a>
         <button id='pedido-pendiente' class="text-wrapper" style="position: absolute; top: 108px; left: 48px;">PEDIDOS PENDIENTES</button>
         <button id= 'pedido-finalizado' class="text-wrapper-2" style="position: absolute; top: 108px; left: 224px;">PEDIDOS FINALIZADOS</button>
       </div>
@@ -108,15 +108,19 @@
         </div>
       </section>
 
-      <div id = "botones-decicion" class="row">
-        <div class="d-flex justify-content-end mt-4">
-          <button id = "boton-cancelar-pedido" class="btn btn-danger rounded-pill text-white p-1">CANCELAR</button>
-        </div>
+      <div id = "botones-desicion">
 
-        <div class="d-flex justify-content-end mt-4">
-          <button id = "boton-aceptar-pedido" class="btn btn-success rounded-pill text-white p-1">ACEPTAR</button>
+        <div class="d-flex justify-content-end mt-4"  style="position: absolute; left: 2rem;">
+          <div id = "boton-volver" class="d-flex mt-4" >
+              <button id="boton_aceptar" class="rounded-pill text-white p-1">VOLVER</button>
+          </div>
         </div>
-
+        <div class="d-flex justify-content-end mt-4" style="position: absolute; right: 5rem;">
+          <div class="d-flex mt-4" id = "boton_confirmar">
+            <button id="boton_cancelar" class="rounded-pill text-white p-1">ACEPTAR</button>
+          </div>
+        </div>
+      
       </div>
     </div>
   </div>
