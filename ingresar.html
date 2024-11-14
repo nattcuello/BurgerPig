@@ -38,6 +38,20 @@
 
       <div class="form-box login">
         <h2 class="title animation" style="--i:0; --j:21">Bienvenido</h2>
+
+        <div id="armar_pedido" class="button-container">
+          <button id="armar_pedido_btn" class="btn btn-danger rounded-pill text-white p-1">
+            ¡¡¡CREA TU PROPIA HAMBURGUESA!!!
+          </button>
+        </div>
+        
+        <script>
+          document.getElementById('armar_pedido_btn').addEventListener('click', function () {
+            window.location.href = '/armar-pedido.html';
+          });
+        </script>
+        
+
         <form action="#">
           <div class="input-box animation" style="--i:1; --j:22">
             <input type="text" id="username" required>
@@ -84,7 +98,7 @@
 
     </div>
   </div>
-
+  <script src="js/redirects_todos.js"></script>
   <script src="js/animations.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
