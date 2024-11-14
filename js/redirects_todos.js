@@ -28,3 +28,7 @@ document.getElementById("registro").addEventListener('click', function() {
         window.location.href = 'http://127.0.0.1:5500/registro.html';
     });
 
+document.getElementById("armar_pedido").addEventListener('click', function() {
+        window.location.href = 'http://127.0.0.1:5500/armar-pedido.html';
+    });
+
